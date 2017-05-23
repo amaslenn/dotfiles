@@ -1,0 +1,19 @@
+[user]
+	name = Maslennikov, Andrey
+	email = andrew.maslennikov@gmail.com
+[alias]
+	st = status -sb
+	br = branch
+	co = checkout
+	ci = commit
+	rb = rebase
+	hist = log --graph --pretty=format:\"%C(red)%h%C(reset) %C(cyan)%ad%C(reset) [%C(green)%an%C(reset)] %C(bold)%d%C(reset) %s\" --abbrev-commit --date=short
+	cor = !git checkout $1 && git rebase master
+	com = checkout master
+	diffw = diff --color-words
+[push]
+	default = simple
+[pull]
+	default = simple
+[includeIf "gitdir:C:/0_work/"]
+	path = .gitconfig-work

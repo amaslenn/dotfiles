@@ -1,6 +1,13 @@
 [user]
 	name = Maslennikov, Andrey
 	email = andrew.maslennikov@gmail.com
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
 [alias]
 	st = status -sb
 	br = branch

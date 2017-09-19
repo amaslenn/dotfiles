@@ -18,6 +18,7 @@
 	cor = !git checkout $1 && git rebase master
 	com = checkout master
 	diffw = diff --color-words
+	pullr = pull --rebase
 [push]
 	default = simple
 [pull]

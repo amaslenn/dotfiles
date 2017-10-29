@@ -2,11 +2,10 @@ set nocompatible
 filetype off
 call plug#begin()
 Plug 'flazz/vim-colorschemes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 filetype plugin indent on
-
-" colorscheme
-colorscheme Monokai
 
 " settings
 set number
@@ -26,3 +25,13 @@ endif
 
 " store .swp files in one place
 set directory^=$HOME/.vim/tmp//
+
+"" Plugins
+" colorscheme
+colorscheme Monokai
+
+" vim-airline
+let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+

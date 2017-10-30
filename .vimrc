@@ -23,8 +23,10 @@ if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" store .swp files in one place
-set directory^=$HOME/.vim/tmp//
+" disable swap files
+set noswapfile
+" [alternatively] store .swp files in one place
+" set directory^=$HOME/.vim/tmp//
 
 "" Plugins
 " colorscheme

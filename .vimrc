@@ -10,7 +10,7 @@ Plug 'farmergreg/vim-lastplace'
 call plug#end()
 filetype plugin indent on
 
-# fzf: `c-f` for search and `c-b` for buffers
+" fzf: `c-f` for search and `c-b` for buffers
 let mapleader=","
 noremap \ ,
 nnoremap <silent> <c-f> :Files<CR>

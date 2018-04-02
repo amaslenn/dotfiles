@@ -4,8 +4,17 @@ call plug#begin()
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install —all' }
+Plug 'junegunn/fzf.vim'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
 filetype plugin indent on
+
+# fzf: `c-f` for search and `c-b` for buffers
+let mapleader=","
+noremap \ ,
+nnoremap <silent> <c-f> :Files<CR>
+nnoremap <silent> <c-b> :Buffers<CR>
 
 " settings
 set number
@@ -37,3 +46,4 @@ let g:airline_theme = 'powerlineish'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
+set noshowmode

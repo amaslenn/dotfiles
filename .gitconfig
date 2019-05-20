@@ -24,6 +24,7 @@
 	wat = log --graph --pretty=format:\"%C(red)%h%C(reset) %C(cyan)%ad%C(reset) [%C(green)%an%C(reset)] %C(bold)%d%C(reset) %s\" --abbrev-commit --date=short ORIG_HEAD..HEAD
 	fu = fetch upstream
 	puc = push origin -u HEAD
+	mu = !git merge --ff-only "upstream/$(git symbolic-ref -q --short HEAD)"
 [push]
 	default = simple
 [pull]

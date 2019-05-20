@@ -8,6 +8,8 @@
 	interactive = auto
 	ui = true
 	pager = true
+[pager]
+	branch = false
 [alias]
 	st = status -sb
 	br = branch

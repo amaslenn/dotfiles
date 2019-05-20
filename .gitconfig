@@ -31,3 +31,5 @@
 	default = simple
 [includeIf "gitdir:C:/0_work/"]
 	path = .gitconfig-work
+[includeIf "gitdir:/Users/amaslenn/workspace/mellanox/"]
+	path = .gitconfig-mlnx

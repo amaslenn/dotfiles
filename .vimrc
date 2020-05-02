@@ -7,6 +7,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install —all' }
 Plug 'junegunn/fzf.vim'
 Plug 'farmergreg/vim-lastplace'
+Plug 'morhetz/gruvbox'
 call plug#end()
 filetype plugin indent on
 
@@ -27,6 +28,9 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+" colors
+set termguicolors
+
 " jump to the last position when reopening a file
 if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -39,7 +43,7 @@ set noswapfile
 
 "" Plugins
 " colorscheme
-colorscheme Monokai
+colorscheme gruvbox
 
 " vim-airline
 let g:airline_theme = 'powerlineish'

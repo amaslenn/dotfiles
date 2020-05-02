@@ -33,3 +33,14 @@
 	path = .gitconfig-work
 [includeIf "gitdir:/Users/amaslenn/workspace/mellanox/"]
 	path = .gitconfig-mlnx
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	commitGraph = true
+[gc]
+	writeCommitGraph = true
+[fetch]
+	writeCommitGraph = true

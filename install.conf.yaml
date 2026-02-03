@@ -1,8 +1,21 @@
+---
+
+- clean: ['~']
+
 - defaults:
     link:
       relink: true
+
+# Ref: https://ohmyz.sh
+- shell:
+  - command: |
+      sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+    description: Install Oh-My-Zsh
+    stdout: true
+    stderr: true
 
 - link:
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
+

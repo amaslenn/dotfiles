@@ -1,3 +1,4 @@
+brew "asmvik/formulae/skhd"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Diff that understands syntax

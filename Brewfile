@@ -38,7 +38,7 @@ brew "uv"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
-cask 1password
+cask "1password"
 # Memory training application
 cask "anki"
 cask "font-cascadia-code"

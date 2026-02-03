@@ -1,0 +1,9 @@
+# Custom keyboard shortcuts to spawn apps
+#
+# Docs can be found here:
+# https://github.com/koekeishiya/skhd
+
+ctrl - p : open -a 'Visual Studio Code'
+ctrl - t : open -a 'Warp'
+ctrl - y : open -a 'Microsoft Edge'
+

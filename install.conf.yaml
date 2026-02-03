@@ -18,4 +18,4 @@
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
-
+    ~/.skhdrc: skhdrc

@@ -17,14 +17,12 @@
 	ci = commit
 	rb = rebase
 	hist = log --graph --pretty=format:\"%C(red)%h%C(reset) %C(cyan)%ad%C(reset) [%C(green)%an%C(reset)] %C(bold)%d%C(reset) %s\" --abbrev-commit --date=short
-	cor = !git checkout $1 && git rebase master
 	com = checkout master
 	diffw = diff --color-words
 	pullr = pull --rebase
 	wat = log --graph --pretty=format:\"%C(red)%h%C(reset) %C(cyan)%ad%C(reset) [%C(green)%an%C(reset)] %C(bold)%d%C(reset) %s\" --abbrev-commit --date=short ORIG_HEAD..HEAD
-	fu = fetch upstream
 	puc = push origin -u HEAD
-	mu = !git merge --ff-only "upstream/$(git symbolic-ref -q --short HEAD)"
+	difft = -c diff.external=difft diff
 [push]
 	default = simple
 [pull]

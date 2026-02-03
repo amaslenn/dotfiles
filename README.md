@@ -6,3 +6,6 @@ My dotfiles collection
 1. Run `git clone https://github.com/amaslenn/dotfiles`, then `cd dotfiles`.
 1. Run `./install-mac` and restart terminal.
 1. Run `brew bundle install --no-upgrade --file Brewfile`.
+1. Generate ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`.
+1. Copy new key with `cat ~/.ssh/id_ed25519.pub | pbcopy` and paste on [GitHub](https://github.com/settings/keys).
+1. Run `./install`.

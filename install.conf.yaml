@@ -5,6 +5,7 @@
 - defaults:
     link:
       relink: true
+      force: true
 
 # Ref: https://ohmyz.sh
 - shell:
@@ -18,4 +19,4 @@
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
-    ~/.skhdrc: skhdrc
+    ~/.hammerspoon/init.lua: hammerspoon.lua

@@ -9,3 +9,6 @@ My dotfiles collection
 1. Generate ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`.
 1. Copy new key with `cat ~/.ssh/id_ed25519.pub | pbcopy` and paste on [GitHub](https://github.com/settings/keys).
 1. Run `./install`.
+
+## Typography layout
+[Ilya Birman's typography layout](https://ilyabirman.ru/typography-layout/) with some [hints](https://ilyabirman.ru/typography-layout/faq/) for installation and post installation steps.

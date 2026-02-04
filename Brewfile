@@ -1,4 +1,3 @@
-brew "asmvik/formulae/skhd"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Diff that understands syntax
@@ -39,12 +38,15 @@ brew "uv"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Memory training application
 cask "anki"
 cask "font-cascadia-code"
 # Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
+# Desktop automation application
+cask "hammerspoon"
 # Windows manager and desktop organiser
 cask "hazeover"
 # Multi-platform web browser
@@ -55,6 +57,7 @@ cask "rectangle"
 cask "telegram"
 # Open-source code editor
 cask "visual-studio-code"
+# Rust-based terminal
 cask "warp"
 mas "1Password for Safari", id: 1569813296
 mas "Menu World Time", id: 1446377255

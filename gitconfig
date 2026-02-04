@@ -38,5 +38,5 @@
 	writeCommitGraph = true
 [fetch]
 	writeCommitGraph = true
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[includeIf "gitdir:~/workspace/work/"]
+	path = ~/.gitconfig.work

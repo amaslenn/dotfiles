@@ -11,5 +11,14 @@ My dotfiles collection
 1. Run `./install`.
 1. Run `./macos-settings.sh`.
 
+
+## Linux setup
+
+Linux setup is separate from the macOS installer and does not clean `$HOME` or force-overwrite existing files.
+
+1. Install `zsh` with your distribution's package manager.
+1. Run `./install-linux` from this repository. It links `gitconfig` to `~/.gitconfig`, installs Oh My Zsh if needed (which creates a default `~/.zshrc` when one is absent), and sets Zsh as the login shell. `chsh` may prompt for your user password.
+
+
 ## Typography layout
 [Ilya Birman's typography layout](https://ilyabirman.ru/typography-layout/) with some [hints](https://ilyabirman.ru/typography-layout/faq/) for installation and post installation steps.

@@ -1,0 +1,24 @@
+# Linux-only setup. Intentionally does not clean $HOME or force-overwrite files.
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: false
+
+- link:
+    ~/.gitconfig: gitconfig
+
+- shell:
+  - command: |
+      if ! command -v zsh >/dev/null 2>&1; then
+        echo 'zsh is required. Install it with your system package manager, then rerun ./install-linux.' >&2
+        exit 1
+      fi
+      if [ ! -d "$HOME/.oh-my-zsh" ]; then
+        RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      fi
+    description: Install Oh My Zsh if it is not already installed
+    stdout: true
+    stderr: true
+
+
